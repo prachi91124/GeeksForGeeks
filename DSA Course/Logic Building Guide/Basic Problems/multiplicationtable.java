@@ -12,8 +12,7 @@ public class multiplicationtable {
 
     public static void fn(int n){
         for(int i = 1; i <= 10; i++){
-            int r = n * i;
-            System.out.println(n +"*"+ i + "=" + r);
+            System.out.println(n +"*"+ i + "=" + n*i);
         }
     }
 }
