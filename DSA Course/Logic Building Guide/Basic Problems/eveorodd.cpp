@@ -9,8 +9,18 @@ bool fn(int n){
         return false;
     }
 }
+
 bool bitwiseand(int n){
     if ((n & 1) == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+bool bitwiseshift(int n){
+    if(((n >> 1)<<1) == n){
         return true;
     }
     else{
@@ -22,6 +32,7 @@ int main(){
     int n;
     cin >> n;
 
-   cout << ((fn(n)  == 1) ? "true": "false");
-   cout << ((bitwiseand(n)  == 1) ? "true": "false");
+   cout << "By finding the Remainder: " << ((fn(n)  == 1) ? "true": "false") << endl;
+   cout << "By using Bitwise AND operation: " << ((bitwiseand(n)  == 1) ? "true": "false") << endl;
+   cout << "By using Bitwise Shift operators: "<< ((bitwiseshift(n)  == 1) ? "true": "false") << endl;
 }
